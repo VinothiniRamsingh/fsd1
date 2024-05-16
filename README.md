@@ -1,15 +1,6 @@
 # Flood Survivor Detection through Image Fusion and Yolo model
+Flood is a natural disaster that happen when water submerges normally onto a dry terrain. Flood rescue team faces numerous challenges while rescuing people. The important part of rescue is detection and localization of survivor. The proposed model is an innovative solution which combines image fusion and yolo model which is a rapid flood survivor detection. The suggested model utilizes image fusion by combining information from various sources including RGB and Near Infrared Red (NIR) images captured through Unmanned Aerial Vehicles (UAVs). The resultant fused image is processed using the yolo model to detect the flood survivors. This approach effectively assists the rescue team in saving flood victims.
 
-Natural disasters like flood happen when water 
-overtakes normally dry places. During rescue missions aimed at 
-saving lives, rescue teams responding to floods encounter 
-numerous obstacles. Locating and discovering survivors is a vital 
-component of rescue operations. For quick flood survivor 
-recognition, the suggested approach combines image fusion with 
-the YOLO (You Only Look Once) model, offering a novel method. 
-This model utilizes image fusion by merging data from various
-sources, including RGB and Near Infrared Red (NIR) images
-captured by Unmanned Aerial Vehicles (UAVs). In order to 
-efficiently identify flood survivors and aid rescue crews in their 
-effort to preserve lives, the resulting fused image is processed 
-using the YOLO model.
+## Methodology
+The proposed model first takes RGB and NIR images as input and performs image fusion on input data using DWT, CV2 and Unet model. The evaluation metrics like Entropy, Mean Squared Error, Peak to Signal Noise Ratio are calculated as assessment criteria for the image fusion process. Finally, the fused image are given to the YOLOv8 model to identify the flood survivors and the performance of the yolo model is evaluated using Precision, Recall, F1 confidence curve and Confusion matrix.
+![image](https://github.com/rajssnbeme/ImageFusion/assets/104271036/066a284a-4c99-45e9-9a18-891d23a1a6d3)
